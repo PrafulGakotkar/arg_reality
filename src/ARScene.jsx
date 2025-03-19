@@ -1,6 +1,6 @@
 import React from 'react';
 import 'aframe';
-import 'ar.js/aframe/build/aframe-ar';
+import 'ar.js/aframe/build/aframe-ar'; // Import AR.js
 
 function ARScene() {
   return (
