@@ -1,5 +1,5 @@
 import './App.css'
-import ARScene from './Components/ARScene'
+import ARScene from './ARScene'
 
 function App() {
  
