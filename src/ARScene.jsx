@@ -3,6 +3,13 @@ import 'aframe';
 import 'ar.js/aframe/build/aframe-ar'; // Import AR.js
 
 function ARScene() {
+  navigator.xr.isSessionSupported('immersive-ar').then((supported) => {
+    if (supported) {
+        console.log('WebXR is supported');
+    } else {
+        console.log('WebXR is not supported');
+    }
+});
   return (
     <a-scene embedded arjs="debugUIEnabled: false; trackingMethod: best;">
       <a-marker preset="hiro">
