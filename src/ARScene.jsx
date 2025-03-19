@@ -16,7 +16,10 @@ function ARScene() {
   return (
     <a-scene
       embedded
-      arjs="debugUIEnabled: false; trackingMethod: best; cameraParametersURL: 'camera_para.dat'"
+      arjs="debugUIEnabled: false; trackingMethod: best; sourceType: webcam;"
+      renderer="logarithmicDepthBuffer: true;" // Fix for z-fighting
+      vr-mode-ui="enabled: false;" // Hide the VR button
+      arjs-anchor="debugUIEnabled: false;" // Hide the anchor UI
     >
       <a-assets>
         <a-asset-item id="camera_para" src="camera_para.dat"></a-asset-item>
